@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset ve temel ayarlar */
+html, body, #__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0a192f; /* Koyu arka plan */
+  overflow-x: hidden; /* Yatay scrollu gizle */
+}
+
+/* Beyaz çerçeve benzeri boşlukları ve box-shadow efektlerini kaldırmak için */
+* {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  background-image: none !important;
+}
+
+/* Scrollbar ayarı (isteğe bağlı) */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #64ffda;
+  border-radius: 8px;
+}
+
+/* Input, button gibi elementlerde varsayılan kenarlık kaldırma */
+input, button, textarea {
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Tailwind’in base reset’ine ek olarak, temel renk ve font ayarları */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #64ffda;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
